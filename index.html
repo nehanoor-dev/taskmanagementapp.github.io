@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Task Management Application</h1>
+  </header>
+  <main>
+    <div class="container">
+      <form id="task-form">
+        <label for="task-name">Task Name:</label>
+        <input type="text" id="task-name" name="task-name" placeholder="Enter task name..." required>
+
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" name="start-date" required>
+
+        <label for="completion-date">Completion Date:</label>
+        <input type="date" id="completion-date" name="completion-date" required>
+
+        <button type="submit">Add Task</button>
+      </form>
+    </div>
+    <div class="container">
+      <table id="task-table">
+        <thead>
+          <tr>
+            <th>Task Name</th>
+            <th>Start Date</th>
+            <th>Completion Date</th>
+            <th>Action</th>
+            <th>Modify</th> <!-- New column for Modify button -->
+          </tr>
+        </thead>
+        <tbody id="task-table-body">
+          <!-- Existing tasks will be added dynamically here -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; NehaNoor 2024 Task Management App</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
